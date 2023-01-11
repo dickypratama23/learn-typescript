@@ -5,7 +5,7 @@
   "scripts": {
     "tsc": "rm -rf src/build/ && tsc",
     "ts": "rm -rf src/build/ && tsc -w",
-    "dev": "nodemon ./src/build/abstract.js"
+    "dev": "nodemon ./src/build/interface.js"
   },
   "repository": {
     "type": "git",
