@@ -1,0 +1,23 @@
+{
+  "name": "learn-ts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "tsc": "rm -rf src/build/ && tsc",
+    "ts": "rm -rf src/build/ && tsc -w",
+    "dev": "nodemon ./src/build/class.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dickypratama23/learn-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dickypratama23/learn-typescript/issues"
+  },
+  "homepage": "https://github.com/dickypratama23/learn-typescript#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
