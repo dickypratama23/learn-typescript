@@ -19,8 +19,14 @@ console.log(user)
 
 // inheritance
 class Admin extends User {
-  read: boolean = true
-  write: boolean = true
+  public read: boolean = true
+  public write: boolean = true
+  public phone: string
+
+  constructor(phone: string, name: string, age: number) {
+    super(name, age);
+    this.phone = phone
+  }
 
   getRole(): { read: boolean, write: boolean } {
     return {
@@ -30,9 +36,10 @@ class Admin extends User {
   }
 }
 
-let admin = new Admin("Dicky", 30);
+let admin = new Admin("08117778888","Dicky", 30);
 console.log(admin)
 console.log(admin.getName())
 admin.setName("Pratama")
 console.log(admin.getRole())
 console.log(admin.getName())
+console.log(admin.phone)
