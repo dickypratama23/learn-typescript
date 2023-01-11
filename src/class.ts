@@ -1,6 +1,7 @@
 export class User {
   public name: string
   public age: number
+  static gender: string = "Man" // static property
 
   constructor(name: string, age: number) {
     this.name = name
@@ -12,6 +13,8 @@ export class User {
   }
 
   getName = (): string => this.name
+
+  static getGender = () => this.gender // static method
 }
 
 let user = new User("Dicky", 17)
@@ -55,3 +58,9 @@ console.log(admin.phone)
 
 admin.email = "dicky@email.com"
 console.log(admin.email)
+
+let gender = Admin.gender
+console.log(gender)
+
+let getGender = Admin.getGender()
+console.log(getGender)
